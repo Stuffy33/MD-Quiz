@@ -7,15 +7,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>MD-Quiz</title>
 </head>
-    <!-- <div class="home">
-        <h3>Instructions:</h3>
-        <p>Total amount of questions: <span class="total-questions">5</span></p>
-        <button type="button" class="start-btn">Start</button>
-    </div> -->
 <body>
     <!-- quiz-container -->
     <div id="quiz-container">
-        
+
         <!-- question container -->
         <div class="questionbox">
             <div id="question"></div>
@@ -36,7 +31,7 @@
     <div id="scoreboard">
         <h2 id="score-name">Your Score</h2>
         <h2 id="score"></h2>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+        <button type="button" id="score-btn" onclick="redoQuiz()">Redo Quiz</button>
         <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
     </div>
 
@@ -44,7 +39,7 @@
     <div id="answerContainer">
         <h2 id="answerheader">Answers</h2>
         <ol id="answers"></ol>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+        <button type="button" id="answers-btn" onclick="redoQuiz()">Redo Quiz</button>
     </div>
 
     <!-- javascript file source -->

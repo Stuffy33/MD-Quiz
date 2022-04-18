@@ -117,6 +117,9 @@ button:hover{
 #score-btn, #check-answer{
   margin-top: 1.5rem;
 }
+#answers-btn{
+  margin-top: 1.5rem;
+}
 
 #answerContainer li{
   text-align: left;
