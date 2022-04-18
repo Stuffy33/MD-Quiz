@@ -1,34 +1,34 @@
 //Question bank
 let questionBank = [
      {
-         question: "Which of clearance angle interval is most commonly used?",
-         option: ["0-3°", "1-3°", "3-5°", "5-10°"],
-         answer: "1-3°"
+         question: "What is actually electricity?",
+         option: ["A flow of water", "A flow of air", "A flow of electrons", "A flow of atoms"],
+         answer: "A flow of electrons"
      },
      {
-         question: "Which of the following fastening methods is cheapest for a plastic part?",
+         question: "Which of the following disorders is the fear of being alone?",
          option: [
-             "Injection molded snaphooks",
-             "Screw connections",
-             "Glue", 
-             "Hot air welding"
+             "Agoraphobia",
+             "Aerophobia",
+             "Acrophobia", 
+             "Arachnophobia"
          ],
-         answer: "Injection molded snaphooks"
+         answer: "Agoraphobia"
      },
      {
-         question: "What is the primary function of fillets/chamfers?",
+         question: "What is the speed of sound?",
          option: [
-             "Estetics", 
-             "Remove risk of user cutting themselfs", 
-             "Better molding results", 
-             "Better strength properties"
+             "120 km/h", 
+             "1,200 km/h", 
+             "400 km/h", 
+             "700 km/h"
          ],
-         answer: "Better molding results"
+         answer: "1,200 km/h"
      },
      {
-         question: "Which of following plastics has the highest tensile strength?",
-         option: ["ABS", "PC", "PP", "PET"],
-         answer: "PC"
+         question: "What is the main component of the sun?",
+         option: ["Liquid lava", "Gas", "Molten iron", "Rock"],
+         answer: "Gas"
      },
      {
          question: "The property of a material which enables it to be drawn into wires with the application of a tensile force, is called?",
