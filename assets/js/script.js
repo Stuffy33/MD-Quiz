@@ -1,4 +1,3 @@
-//Question bank
 let questionBank = [
     {
     answer: "A flow of electrons",
@@ -45,7 +44,7 @@ let questionBank = [
     ],
     question: "The property of a material which enables it to be drawn into wires with the application of a tensile force, is called?"
     }
-]
+];
 
 let quizContainer = document.getElementById("quiz-container");
 let scorecard = document.getElementById("scorecard");
@@ -59,6 +58,7 @@ let option = document.querySelector(".option");
 let points = document.getElementById("score");
 let score = 0;
 let i = 0;
+displayQuestion();
 
 //function to display questions
 function displayQuestion(){
@@ -83,8 +83,9 @@ function calcScore(event){
     }
     else{
         document.getElementById(event.id).style.background= "red";
-    }
-    setTimeout(nextQuestion, 400);
+    }    
+    setTimeout(nextQuestion, 5000);
+    document.getElementById(event.id).style.background= "white";
     
 }
 
@@ -97,7 +98,7 @@ function nextQuestion(){
     else{
         points.innerHTML = score + "/" + questionBank.length;
         quizContainer.style.display = "none";
-        scoreboard.style.display= "block"
+        scoreboard.style.display= "block";
     }
 }
 
@@ -122,5 +123,5 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
-displayQuestion();
+//displayQuestion();
 
