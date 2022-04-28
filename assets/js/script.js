@@ -1,3 +1,4 @@
+//Question bank
 let questionBank = [
     {
     answer: "A flow of electrons",
@@ -58,6 +59,7 @@ let option = document.querySelector(".option");
 let points = document.getElementById("score");
 let score = 0;
 let i = 0;
+
 displayQuestion();
 
 //function to display questions
@@ -70,6 +72,7 @@ function displayQuestion(){
     option1.innerHTML = questionBank[i].option[1];
     option2.innerHTML = questionBank[i].option[2];
     option3.innerHTML = questionBank[i].option[3];
+
     
     //Display xof5
     xof5.innerHTML = "Question" + " " + (i + 1) + " " + "of" + " " + questionBank.length;
@@ -80,13 +83,17 @@ function calcScore(event){
     if (event.innerHTML === questionBank[i].answer && score < questionBank.length){
         score = score + 1;
         document.getElementById(event.id).style.background = "limegreen";
+        document.getElementById(event.id).style.color = "white";
     }
     else{
-        document.getElementById(event.id).style.background= "red";
-    }    
-    setTimeout(nextQuestion, 5000);
-    document.getElementById(event.id).style.background= "white";
-    
+        document.getElementById(event.id).style.background = "red";
+        document.getElementById(event.id).style.color = "white";
+    }
+    setTimeout(function() { 
+        nextQuestion();  
+        document.getElementById(event.id).style.background = null;
+        document.getElementById(event.id).style.color = null;
+    }, 400);
 }
 
 //function to display next question
@@ -98,7 +105,7 @@ function nextQuestion(){
     else{
         points.innerHTML = score + "/" + questionBank.length;
         quizContainer.style.display = "none";
-        scoreboard.style.display= "block";
+        scoreboard.style.display = "block";
     }
 }
 
@@ -123,5 +130,4 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
-//displayQuestion();
 

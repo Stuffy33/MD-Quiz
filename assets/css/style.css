@@ -21,16 +21,24 @@
 body{
   background-color: var(--darkpurple);
   color: var(--darkpurple);
-  font-family: "Ubunto", sans-serif;  
+  font-family: "Ubunto", sans-serif;
+}
+
+header p{
+  color: white;
+  padding: 2.5rem;
+  font-family: "Yellowtail", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 #quiz-container{
-  margin: 5em;
+  margin: 0 5em;
 }
 
 .questionbox{
   background-color: var(--lightpurple);
-  margin: 5em auto;
+  margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
   max-width: 700px;
@@ -54,7 +62,7 @@ body{
 }
 
 .option:hover{
-  background-color: var(--darkpurple);
+  background-color: var(--darkpurple) ;
   color: var(--white);
   transition: all 0.3s ease-in-out;
 }
@@ -94,14 +102,12 @@ button:hover{
   background-color: var(--lightpurple);
   color: var(--darkpurple);
   margin: auto;
-  margin-top: 5rem;
   padding: 2rem;
   border-radius: 1rem;
   width: 320px;
   text-align: center;
   position: relative;
   display: none;
-  
 }
 
 #score-name{
@@ -137,22 +143,64 @@ button:hover{
   padding-left: 1rem;
 }
 
+.social-network{
+  margin: 0 auto;
+  padding: 2.5rem;
+  max-width: 700px;
+  display: flex;
+}
+
+ul{
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-network li{
+  padding: 0 1rem;
+}
+
+.social-network i{
+  font-size: 160%;
+  color: var(--white);
+}
+
+/* Smaller screen sizes */
 @media screen and (max-width: 768px){
 
   body{
     background-color: var(--lightpurple);
   }
+
+  header p{
+    background-color: var(--darkpurple);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.7em;
+    text-align: center;
+    /* color: var(--darkpurple); */
+  }
+
   #quiz-container{
     margin:0;
   }
+
   .questionbox{
     margin: 0;
     max-width: 100%;
     border-radius: 0;
+    padding-bottom: 0;
+  }
+
+  #scoreboard, #answerContainer{
+    padding-bottom: 0;
+  }
+
+  .social-network i{
+    color: var(--darkpurple);
   }
 
   .buttons{
-  text-align: center;
+    text-align: center;
   }
 
   button{
