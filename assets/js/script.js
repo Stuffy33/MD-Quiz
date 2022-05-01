@@ -67,13 +67,13 @@ function displayQuestion(){
     for(a = 0; a < option.length; a++){
         option[a].style.background = "none";
     }
+    
     question.innerHTML = questionBank[i].question;
     option0.innerHTML = questionBank[i].option[0];
     option1.innerHTML = questionBank[i].option[1];
     option2.innerHTML = questionBank[i].option[2];
     option3.innerHTML = questionBank[i].option[3];
 
-    
     //Display xof5
     xof5.innerHTML = "Question" + " " + (i + 1) + " " + "of" + " " + questionBank.length;
 }
@@ -93,10 +93,11 @@ function calcScore(event){
         nextQuestion();  
         document.getElementById(event.id).style.background = null;
         document.getElementById(event.id).style.color = null;
+        
     }, 400);
 }
 
-//function to display next question
+//function to display next question / swap to scoreboard
 function nextQuestion(){
     if (i < questionBank.length - 1){
         i = i + 1;
